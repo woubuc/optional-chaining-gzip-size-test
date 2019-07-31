@@ -19,8 +19,8 @@ Running `ls -l` in the `bundles` directory gives us this:
 ```
 
 From this, we can see:
-- The Babel file is much larger than the Lodash file (however: see my note on Lodash below)
-- The gzipped Babel file is slightly smaller than the gzipped Lodash file, meaning it's compressied much more.
+- The Babel file is larger than the Lodash file (however: see my note on Lodash below)
+- The gzipped Babel file is slightly smaller than the gzipped Lodash file, meaning it's compressed much more.
 
 ## A note on Lodash.get
 `lodash.get` actually needs a lot more logic than this, because it uses several other internal Lodash functions. See [the `lodash.get` package source](https://github.com/lodash/lodash/blob/4.4.2-npm-packages/lodash.get/index.js) for the actual size of this function.
